@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         addFolder.setOnClickListener(awesomeOnClickListener);
     }
     private void addFolderclicked() {
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
+
     }
 
 }
