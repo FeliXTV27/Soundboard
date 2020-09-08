@@ -67,5 +67,6 @@ public class AddFolder extends AppCompatActivity {
         Intent intent = new Intent(AddFolder.this, MainActivity.class);
         intent.putExtra("name", folderName.getText().toString());
         startActivity(intent);
+        //test
     }
 }
