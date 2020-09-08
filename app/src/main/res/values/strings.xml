@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Soundboard</string>
+    <string name="sign_in">Sign In</string>
+    <string name="record">Record</string>
+    <string name="export">Export</string>
+    <string name="your_sounds">Your Sounds</string>
+    <string name="button">Button</string>
 </resources>
