@@ -41,7 +41,7 @@ public class RecordActivity extends AppCompatActivity {
         if (requestCode == REQUEST_RECORD_AUDIO_PERMISSION) {
             permissionToRecordAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
         }
-        //if (!permissionToRecordAccepted ) finish();
+        if (!permissionToRecordAccepted ) finish();
     }
 
     private void onRecord(boolean start) {
