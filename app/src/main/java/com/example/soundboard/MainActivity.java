@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         addFolder = (Button) findViewById(R.id.btn_addFolder);
-
         addFolder.setOnClickListener(awesomeOnClickListener);
     }
     private void addFolderclicked() {
-        //penis
+        Intent intent = new Intent(MainActivity.this, AddFolder.class);
+        startActivity(intent);
     }
 
 }
