@@ -68,4 +68,5 @@ public class AddFolder extends AppCompatActivity {
         intent.putExtra("name", folderName.getText().toString());
         startActivity(intent);
     }
+    //asdf
 }
