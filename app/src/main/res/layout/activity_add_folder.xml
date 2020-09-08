@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:saveEnabled="false"
     tools:context=".AddFolder">
 
     <LinearLayout
@@ -20,7 +21,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button30"
+                android:id="@+id/btnRecord"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -49,26 +50,26 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="0.01"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/btnRecord"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:text="Back"
+                    android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/addFolderTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="5"
                     android:gravity="center_horizontal"
-                    android:text="Your sounds"
+                    android:text="Add Folder"
                     android:textSize="36sp" />
 
                 <Button
@@ -81,31 +82,27 @@
 
             </LinearLayout>
 
-            <ScrollView
+            <EditText
+                android:id="@+id/inputNewFolderName"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1">
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <Button
-                        android:id="@+id/button46"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Button" />
-
-                </LinearLayout>
-            </ScrollView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <Button
-                android:id="@+id/btn_addFolder"
+                android:id="@+id/btnConfirmNewFolder"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.125"
-                android:text="Add New Folder" />
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:text="Confirm" />
+
         </LinearLayout>
     </LinearLayout>
 
